@@ -1,0 +1,73 @@
+<link rel="stylesheet" type="text/css" href="footer.css">
+<script>
+function initMap() {
+    var uluru = {lat: 57.6916195, lng: 11.9887323};
+    var map = new google.maps.Map(document.getElementById('map'), 
+    {
+      zoom: 10,
+      center: uluru
+    });
+    var marker = new google.maps.Marker(
+    {
+      position: uluru,
+      map: map,
+    });
+    var contentString = "Rosenhillsgatan 4";
+    marker.addListener('click', function() 
+    {
+    infowindow.open(map, marker);
+    });
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+      maxWidth: 120
+    });
+  }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTKK6Bl2CKnWn-yfsQDqQH0o6PaxARYuQ&callback=initMap">
+</script>
+
+<div class="divIndex">
+<h4 class="divH4">Contact me</h4>
+<hr class="divHr">
+    <div class="container contactMeDiv" id="contactMeContainer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="well well-sm contactMeDiv" id="contactMeInnerContainer">
+                    <div class="row" id="contactMeRow">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="images/profilepicture.jpg" style="height:144px;width:144px" alt="" class="img-rounded img-responsive col-offset-md-1 col-offset-sm-1" id="contactPicture" />
+                        </div>
+                        <div class="col-sm-6 col-md-8" id="contactInfo">
+                            <h4 style="margin-top:0;">
+                                Nicholas Flod</h4>
+                            <i class="glyphicon">Gothenburg, Sweden</i>
+                            <p>
+                                <i class="glyphicon"><a href="mailto:Nicholas.flod@gmail.com">Nicholas.Flod@gmail.com</a></i>
+                                <br />
+                                <i class="glyphicon"><a href="tel:0720425918">0720425918</a></i></p>
+                            <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Social</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span><span class="sr-only"></span>
+                                </button>
+                                <div class="dropdown-menu" role="menu" id="dropdownContact" style="text-align: center">
+                                    <a href="https://www.facebook.com/nicholas.flod" class="btn btn-social-icon btn-facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.linkedin.com/in/nicholas-flod-94596bb3" class="btn btn-social-icon btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://twitter.com/flodnicholas" class="btn btn-social-icon btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/nicholasflod/" class="btn btn-social-icon btn-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <div class="divider"></div>
+                                    <a href="http://m.me/nicholas.flod" target="_blank" id="messengerChat" class="btn btn-primary" style="color:white">Chat with me on facebook messenger</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="map">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

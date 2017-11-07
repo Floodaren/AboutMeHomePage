@@ -1,0 +1,239 @@
+.tableManagefiles
+{
+	font-size: 80%;
+}
+
+#signUpWarningID
+{
+	text-align: center;
+}
+
+.divH4 
+{
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.divHr 
+{
+	margin-top: 0;
+}
+
+.showfile
+{
+	word-break: break-all;
+	word-wrap:break-word;
+}
+
+.divIndex
+{
+	padding-top: 60px;
+	width: 100%;
+}
+
+.img-rounded 
+{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 500px;
+}
+
+#logInWarning 
+{
+	margin-top: 100px;
+}
+
+#warningLink:hover 
+{
+	text-decoration: none;
+}
+
+legend 
+{
+	text-align: center;
+}
+
+.contactMeDiv 
+{
+	width: 500px;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.manageFilesButton 
+{
+	height: 20px;
+	width: 20px;
+}
+
+#cvID 
+{
+	background-image: url("images/cvBackground.jpg");
+	width: 100%;
+	
+}
+
+#cvInnerLeft 
+{
+	margin: 0 auto;
+}
+
+.signupClass 
+{
+	margin-top: 15px;
+}
+
+.form-group
+{
+	width: 100%;
+}
+
+.col-lg-10 
+{
+	padding: 0; 
+	width: 80%;
+}
+
+.form-control-index
+{
+	margin-left: 3%;
+}
+
+.col-lg-2 
+{
+	margin-left: 1%;
+}
+
+#signUpSubmitCancel 
+{
+	margin-left: 20%;
+}
+
+.tab-pane
+{
+	width: 95%;
+	margin-left: 2%;
+}
+
+#navBarBrand
+{
+	margin-left: 1px;
+}
+
+#test2 
+{
+	font-size: 50%;
+}
+/* Nedan kommer media-queries för min-width 1200px */
+
+@media (max-width: 1200px) 
+{
+
+	#signUpSubmitCancel  
+	{
+		margin-left: 2.5%;
+	}
+}
+
+/* Nedan kommer media-queries för min-width 768px */
+@media (max-width: 768px)
+{
+	#navBarBrand
+	{
+		margin-left: 5px;
+	}
+
+	.contactMeDiv
+	{
+		width: 90%;
+	}
+	#contactPicture 
+	{
+		margin: 0;
+		width: 20%;
+		float: left;
+	}
+	#contactInfo 
+	{
+		margin: 0;
+		margin-right: 0;
+		margin-left: 35%;
+	}
+	#contactMeInnerContainer
+	{
+		width: 80%;
+	}
+	#test 
+	{
+		width: 100%;
+	}
+}
+
+/* Nedan kommer media-queries för min-width 650px */
+@media (max-width: 650px)
+{
+	#signUpSubmitCancel 
+	{
+		margin-left: 5%;
+	}
+	.form-control-index
+	{
+		margin-left: 7%;
+	}
+
+	.col-lg-2 
+	{
+		margin-left: 3%;
+	}
+
+	#contactInfo 
+	{
+		float: none;
+		margin-left: 45%;
+	}
+}
+/* Nedan kommer media-queries för min-width 525px */
+@media (max-width: 525px) 
+{
+	#messengerChat 
+	{
+		font-size: 9px;
+	}
+}
+
+/* Nedan kommer media-queries för min-width 489px */
+@media (max-width: 489px) 
+{
+	#contactPicture 
+	{
+		float: none;
+		margin: 0 auto;
+	}
+	#contactInfo 
+	{
+		float: none;
+		text-align: center;
+		margin-left: 0;
+	}
+	#contactMeRow 
+	{
+		padding: 0;
+		margin-left: 1%;
+	}
+}
+@media (max-width: 430px)
+{
+	.cvTable
+	{
+		font-size: 69%;
+	}
+	#upLoadButton
+	{
+		font-size: 80%;
+	}
+} 
+
+
+
